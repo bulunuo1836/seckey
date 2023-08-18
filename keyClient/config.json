@@ -1,0 +1,6 @@
+{
+    "SeverID":"keySever",
+    "ClientID":"test",
+    "SeverIP":"127.0.0.1",
+    "SeverPort":9999
+}

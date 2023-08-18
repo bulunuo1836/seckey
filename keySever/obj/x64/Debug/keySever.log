@@ -1,0 +1,21 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.196.131”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  OpensslAES.cpp
+D:\VC\data\keySever\OpensslAES.cpp(9,56): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keySever\OpensslAES.cpp(9,56): warning :     9 |                 AES_set_encrypt_key(aesKey, key.size() * 8, &encKey);
+D:\VC\data\keySever\OpensslAES.cpp(9,56): warning :       |                                             ~~~~~~~~~~~^~~
+D:\VC\data\keySever\OpensslAES.cpp(10,56): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keySever\OpensslAES.cpp(10,56): warning :    10 |                 AES_set_decrypt_key(aesKey, key.size() * 8, &decKey);
+D:\VC\data\keySever\OpensslAES.cpp(10,56): warning :       |                                             ~~~~~~~~~~~^~~
+D:\VC\data\keySever\OpensslAES.cpp(34,34): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keySever\OpensslAES.cpp(34,34): warning :    34 |         int length = data.size() + 1;
+D:\VC\data\keySever\OpensslAES.cpp(34,34): warning :       |                      ~~~~~~~~~~~~^~~
+D:\VC\data\keySever\OpensslAES.cpp(54,27): warning : comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+D:\VC\data\keySever\OpensslAES.cpp(54,27): warning :    54 |         for (int i = 0; i < key.size(); ++i)
+D:\VC\data\keySever\OpensslAES.cpp(54,27): warning :       |                         ~~^~~~~~~~~~~~
+  正在链接对象
+  keySever.vcxproj -> D:\VC\data\keySever\bin\x64\Debug\keySever.out

@@ -1,0 +1,67 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.196.131”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  clientOP.cpp
+D:\VC\data\keyClient\clientOP.cpp(30,57): warning : conversion from ‘Json::Value::Int’ {aka ‘int’} to ‘short unsigned int’ may change value [-Wconversion]
+D:\VC\data\keyClient\clientOP.cpp(30,57): warning :    30 |     this->m_info.severPort = jsonRoot["SeverPort"].asInt();
+D:\VC\data\keyClient\clientOP.cpp(30,57): warning :       |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+D:\VC\data\keyClient\clientOP.cpp(259,15): warning : conversion from ‘time_t’ {aka ‘long int’} to ‘unsigned int’ may change value [-Wconversion]
+D:\VC\data\keyClient\clientOP.cpp(259,15): warning :   259 |     srand(time(NULL));
+D:\VC\data\keyClient\clientOP.cpp(259,15): warning :       |           ~~~~^~~~~~
+D:\VC\data\keyClient\clientOP.cpp(261,17): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+D:\VC\data\keyClient\clientOP.cpp(268,41): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\VC\data\keyClient\clientOP.cpp(268,41): warning :   268 |             retStr.append(1, rand() % 9 + '1');
+D:\VC\data\keyClient\clientOP.cpp(268,41): warning :       |                              ~~~~~~~~~~~^~~~~
+D:\VC\data\keyClient\clientOP.cpp(271,42): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\VC\data\keyClient\clientOP.cpp(271,42): warning :   271 |             retStr.append(1, rand() % 26 + 'a');
+D:\VC\data\keyClient\clientOP.cpp(271,42): warning :       |                              ~~~~~~~~~~~~^~~~~
+D:\VC\data\keyClient\clientOP.cpp(274,42): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\VC\data\keyClient\clientOP.cpp(274,42): warning :   274 |             retStr.append(1, rand() % 26 + 'A');
+D:\VC\data\keyClient\clientOP.cpp(274,42): warning :       |                              ~~~~~~~~~~~~^~~~~
+  Codec.cpp
+  CodecFactory.cpp
+  main.cpp
+  Msg.pb.cc
+  OpensslAES.cpp
+D:\VC\data\keyClient\OpensslAES.cpp(9,56): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslAES.cpp(9,56): warning :     9 |                 AES_set_encrypt_key(aesKey, key.size() * 8, &encKey);
+D:\VC\data\keyClient\OpensslAES.cpp(9,56): warning :       |                                             ~~~~~~~~~~~^~~
+D:\VC\data\keyClient\OpensslAES.cpp(10,56): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslAES.cpp(10,56): warning :    10 |                 AES_set_decrypt_key(aesKey, key.size() * 8, &decKey);
+D:\VC\data\keyClient\OpensslAES.cpp(10,56): warning :       |                                             ~~~~~~~~~~~^~~
+D:\VC\data\keyClient\OpensslAES.cpp(34,34): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslAES.cpp(34,34): warning :    34 |         int length = data.size() + 1;
+D:\VC\data\keyClient\OpensslAES.cpp(34,34): warning :       |                      ~~~~~~~~~~~~^~~
+  OpensslHash.cpp
+  OpensslRSA.cpp
+D:\VC\data\keyClient\OpensslRSA.cpp(111,47): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslRSA.cpp(111,47): warning :   111 |         int ret = RSA_public_encrypt(data.size(), (const unsigned char*)data.data(),
+D:\VC\data\keyClient\OpensslRSA.cpp(111,47): warning :       |                                      ~~~~~~~~~^~
+D:\VC\data\keyClient\OpensslRSA.cpp(146,68): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘unsigned int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslRSA.cpp(146,68): warning :   146 |         RSA_sign(type, (const unsigned char*)data.data(), data.size(), (unsigned char*)signBuf,
+D:\VC\data\keyClient\OpensslRSA.cpp(146,68): warning :       |                                                           ~~~~~~~~~^~
+D:\VC\data\keyClient\OpensslRSA.cpp(159,80): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘unsigned int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslRSA.cpp(159,80): warning :   159 |         int ret = RSA_verify(type, (const unsigned char*)data.data(), data.size(),
+D:\VC\data\keyClient\OpensslRSA.cpp(159,80): warning :       |                                                                       ~~~~~~~~~^~
+D:\VC\data\keyClient\OpensslRSA.cpp(187,30): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\OpensslRSA.cpp(187,30): warning :   187 |         int length = str.size();
+D:\VC\data\keyClient\OpensslRSA.cpp(187,30): warning :       |                      ~~~~~~~~^~
+  RequestCodec.cpp
+  RequestFactory.cpp
+  RespondCodec.cpp
+  RespondFactory.cpp
+  TcpSocket.cpp
+D:\VC\data\keyClient\TcpSocket.cpp(80,42): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\TcpSocket.cpp(80,42): warning :    80 |                 int dataLen = msg.size() + 4;
+D:\VC\data\keyClient\TcpSocket.cpp(80,42): warning :       |                               ~~~~~~~~~~~^~~
+D:\VC\data\keyClient\TcpSocket.cpp(90,44): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+D:\VC\data\keyClient\TcpSocket.cpp(90,44): warning :    90 |                 int netLen = htonl(msg.size());
+D:\VC\data\keyClient\TcpSocket.cpp(90,44): warning :       |                                    ~~~~~~~~^~
+D:\VC\data\keyClient\TcpSocket.cpp(413,38): warning : conversion from ‘size_t’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+D:\VC\data\keyClient\TcpSocket.cpp(413,38): warning :   413 |                         return count - nLeft;
+D:\VC\data\keyClient\TcpSocket.cpp(413,38): warning :       |                                ~~~~~~^~~~~~~
+  正在链接对象
+  keyClient.vcxproj -> D:\VC\data\keyClient\bin\x64\Debug\keyClient.out
